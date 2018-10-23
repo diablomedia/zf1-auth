@@ -24,7 +24,7 @@ branches:
 
 install:
   - phpenv rehash
-  - travis_retry composer install --no-interaction --prefer-source
+  - travis_retry composer update --no-interaction --prefer-source $COMPOSER_ARGS
 
 stages:
   - test
